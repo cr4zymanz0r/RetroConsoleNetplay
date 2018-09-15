@@ -1,0 +1,17 @@
+This is an initial proof-of-concept version that works and is playable, but don't expect miracles on competative games or ones requiring quick reflexes due to added latency of going over the internet. Support will be very limited for this version. During my testing I was using Discord to stream. Twitch added far too much additional latency to be playable.
+
+
+1.) Load ControllerInterface.ino on your Arduion Uno (might work on other models, but is untested)
+
+2.) Make your own adapter/padhack/mess of wires that connects the Arduino to DB15 style controller connection (Neo Geo, superguns, custom padhacks) as shown in Arduino_connections.png
+
+3.) Use a PC with a capture card to stream the game so your friend(s) can see it.
+
+4.) Connect Arduino to the PC and the console's 2nd player controller port (will probably support more players in the future).
+
+5.) Run the ControllerServer.exe, type in the name of the COM port the Arduino is running on, and forward port 8000 for that PC on your router.
+
+5.) Have your friend run ControllerClient.exe, and they will need to input your IP address.
+
+Once they connect their button presses should register in your game.
+Note: the ControllerClient is currently hardcoded for a Xbox 360 controller. Other controllers may work, but are untested. There is currently no option to re-map buttons.
