@@ -1,19 +1,18 @@
 // Buffer to store incoming commands from serial port
 String inData = "";
 
-//pin 14 - 21 is pin A0 to 07
-int a = 7;	// up			//DB15 pin 15
-int b = 9;	// down			//DB15 pin 7
-int c = 6;	// left			//DB15 pin 14
-int d = 8;	// right		//DB15 pin 6
-int e = 17;	// select/coin	//DB15 pin 3
-int f = 3;	// start		//DB15 pin 11
-int g = 5;	// button 1		//DB15 pin 13
-int h = 19;	// button 2		//DB15 pin 5
-int i = 4;	// button 3		//DB15 pin 12
-int j = 18;	// button 4		//DB15 pin 4
-int k = 2;	// button 5		//DB15 pin 10
-int l = 16;	// button 6		//DB15 pin 2
+int a = 2;	// up
+int b = 3;	// down
+int c = 4;	// left
+int d = 5;	// right
+int e = 6;	// select/coin
+int f = 7;	// start
+int g = 8;	// button 1
+int h = 9;	// button 2
+int i = 10;	// button 3
+int j = 11;	// button 4
+int k = 12;	// button 5
+int l = 14;	// button 6
 
 void setup()
 {
